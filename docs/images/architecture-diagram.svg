@@ -1,0 +1,163 @@
+<svg viewBox="0 0 1000 700" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="1000" height="700" fill="#f8f9fa" />
+  
+  <!-- Title -->
+  <text x="500" y="40" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle">Spring Boot Microservices Architecture</text>
+  
+  <!-- API Gateway -->
+  <rect x="400" y="80" width="200" height="60" rx="10" fill="#4285f4" />
+  <text x="500" y="120" font-family="Arial" font-size="16" font-weight="bold" fill="white" text-anchor="middle">API Gateway</text>
+  
+  <!-- Eureka Server -->
+  <rect x="150" y="180" width="180" height="60" rx="10" fill="#34a853" />
+  <text x="240" y="220" font-family="Arial" font-size="16" font-weight="bold" fill="white" text-anchor="middle">Eureka Server</text>
+  
+  <!-- Config Server -->
+  <rect x="670" y="180" width="180" height="60" rx="10" fill="#34a853" />
+  <text x="760" y="220" font-family="Arial" font-size="16" font-weight="bold" fill="white" text-anchor="middle">Config Server</text>
+  
+  <!-- Kafka + Zookeeper -->
+  <rect x="60" y="470" width="180" height="60" rx="10" fill="#ea4335" />
+  <text x="150" y="510" font-family="Arial" font-size="16" font-weight="bold" fill="white" text-anchor="middle">Kafka + Zookeeper</text>
+  
+  <!-- Kafka UI -->
+  <rect x="60" y="550" width="180" height="40" rx="5" fill="#fbbc05" />
+  <text x="150" y="575" font-family="Arial" font-size="14" fill="black" text-anchor="middle">Kafka UI</text>
+  
+  <!-- PostgreSQL -->
+  <rect x="300" y="550" width="180" height="40" rx="5" fill="#fbbc05" />
+  <text x="390" y="575" font-family="Arial" font-size="14" fill="black" text-anchor="middle">PostgreSQL</text>
+  
+  <!-- Redis -->
+  <rect x="520" y="550" width="180" height="40" rx="5" fill="#fbbc05" />
+  <text x="610" y="575" font-family="Arial" font-size="14" fill="black" text-anchor="middle">Redis</text>
+  
+  <!-- File Storage -->
+  <rect x="740" y="550" width="180" height="40" rx="5" fill="#fbbc05" />
+  <text x="830" y="575" font-family="Arial" font-size="14" fill="black" text-anchor="middle">File Storage</text>
+  
+  <!-- Microservices -->
+  <!-- Auth Service -->
+  <rect x="100" y="300" width="160" height="50" rx="10" fill="#4285f4" />
+  <text x="180" y="330" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Auth Service</text>
+  
+  <!-- User Service -->
+  <rect x="300" y="300" width="160" height="50" rx="10" fill="#4285f4" />
+  <text x="380" y="330" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">User Service</text>
+  
+  <!-- Job Service -->
+  <rect x="500" y="300" width="160" height="50" rx="10" fill="#4285f4" />
+  <text x="580" y="330" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Job Service</text>
+  
+  <!-- Notification Service -->
+  <rect x="700" y="300" width="160" height="50" rx="10" fill="#4285f4" />
+  <text x="780" y="330" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Notification Service</text>
+  
+  <!-- File Service -->
+  <rect x="400" y="380" width="160" height="50" rx="10" fill="#4285f4" />
+  <text x="480" y="410" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">File Storage Service</text>
+  
+  <!-- Connections -->
+  <!-- Gateway to Services -->
+  <line x1="500" y1="140" x2="500" y2="170" stroke="#666" stroke-width="2" stroke-dasharray="5,5" />
+  <line x1="500" y1="170" x2="240" y2="170" stroke="#666" stroke-width="2" stroke-dasharray="5,5" />
+  <line x1="240" y1="170" x2="240" y2="180" stroke="#666" stroke-width="2" stroke-dasharray="5,5" />
+  
+  <line x1="500" y1="170" x2="760" y2="170" stroke="#666" stroke-width="2" stroke-dasharray="5,5" />
+  <line x1="760" y1="170" x2="760" y2="180" stroke="#666" stroke-width="2" stroke-dasharray="5,5" />
+  
+  <!-- Gateway to Microservices -->
+  <line x1="500" y1="140" x2="180" y2="300" stroke="#666" stroke-width="1" />
+  <line x1="500" y1="140" x2="380" y2="300" stroke="#666" stroke-width="1" />
+  <line x1="500" y1="140" x2="580" y2="300" stroke="#666" stroke-width="1" />
+  <line x1="500" y1="140" x2="780" y2="300" stroke="#666" stroke-width="1" />
+  <line x1="500" y1="140" x2="480" y2="380" stroke="#666" stroke-width="1" />
+  
+  <!-- Services to Kafka -->
+  <line x1="180" y1="350" x2="180" y2="470" stroke="#ea4335" stroke-width="2" />
+  <line x1="380" y1="350" x2="380" y2="420" stroke="#ea4335" stroke-width="2" />
+  <line x1="380" y1="420" x2="150" y2="420" stroke="#ea4335" stroke-width="2" />
+  <line x1="150" y1="420" x2="150" y2="470" stroke="#ea4335" stroke-width="2" />
+  
+  <line x1="580" y1="350" x2="580" y2="420" stroke="#ea4335" stroke-width="2" />
+  <line x1="580" y1="420" x2="150" y2="420" stroke="#ea4335" stroke-width="2" />
+  
+  <line x1="780" y1="350" x2="780" y2="420" stroke="#ea4335" stroke-width="2" />
+  <line x1="780" y1="420" x2="150" y2="420" stroke="#ea4335" stroke-width="2" />
+  
+  <!-- Services to PostgreSQL -->
+  <line x1="180" y1="350" x2="180" y2="490" stroke="#fbbc05" stroke-width="2" />
+  <line x1="180" y1="490" x2="390" y2="490" stroke="#fbbc05" stroke-width="2" />
+  <line x1="390" y1="490" x2="390" y2="550" stroke="#fbbc05" stroke-width="2" />
+  
+  <line x1="380" y1="350" x2="380" y2="490" stroke="#fbbc05" stroke-width="2" />
+  <line x1="380" y1="490" x2="390" y2="490" stroke="#fbbc05" stroke-width="2" />
+  
+  <line x1="580" y1="350" x2="580" y2="490" stroke="#fbbc05" stroke-width="2" />
+  <line x1="580" y1="490" x2="390" y2="490" stroke="#fbbc05" stroke-width="2" />
+  
+  <!-- Auth Service to Redis -->
+  <line x1="180" y1="350" x2="180" y2="510" stroke="#fbbc05" stroke-width="2" />
+  <line x1="180" y1="510" x2="610" y2="510" stroke="#fbbc05" stroke-width="2" />
+  <line x1="610" y1="510" x2="610" y2="550" stroke="#fbbc05" stroke-width="2" />
+  
+  <!-- File Storage Service to File Storage -->
+  <line x1="480" y1="430" x2="480" y2="530" stroke="#fbbc05" stroke-width="2" />
+  <line x1="480" y1="530" x2="830" y2="530" stroke="#fbbc05" stroke-width="2" />
+  <line x1="830" y1="530" x2="830" y2="550" stroke="#fbbc05" stroke-width="2" />
+  
+  <!-- Eureka Service Discovery -->
+  <line x1="240" y1="240" x2="240" y2="270" stroke="#34a853" stroke-width="2" stroke-dasharray="5,5" />
+  <line x1="240" y1="270" x2="180" y2="270" stroke="#34a853" stroke-width="2" stroke-dasharray="5,5" />
+  <line x1="180" y1="270" x2="180" y2="300" stroke="#34a853" stroke-width="2" stroke-dasharray="5,5" />
+  
+  <line x1="240" y1="270" x2="380" y2="270" stroke="#34a853" stroke-width="2" stroke-dasharray="5,5" />
+  <line x1="380" y1="270" x2="380" y2="300" stroke="#34a853" stroke-width="2" stroke-dasharray="5,5" />
+  
+  <line x1="240" y1="270" x2="580" y2="270" stroke="#34a853" stroke-width="2" stroke-dasharray="5,5" />
+  <line x1="580" y1="270" x2="580" y2="300" stroke="#34a853" stroke-width="2" stroke-dasharray="5,5" />
+  
+  <line x1="240" y1="270" x2="780" y2="270" stroke="#34a853" stroke-width="2" stroke-dasharray="5,5" />
+  <line x1="780" y1="270" x2="780" y2="300" stroke="#34a853" stroke-width="2" stroke-dasharray="5,5" />
+  
+  <line x1="240" y1="270" x2="240" y2="380" stroke="#34a853" stroke-width="2" stroke-dasharray="5,5" />
+  <line x1="240" y1="380" x2="400" y2="380" stroke="#34a853" stroke-width="2" stroke-dasharray="5,5" />
+  
+  <!-- Config Server connections -->
+  <line x1="760" y1="240" x2="760" y2="270" stroke="#34a853" stroke-width="2" stroke-dasharray="5,5" />
+  <line x1="760" y1="270" x2="180" y2="270" stroke="#34a853" stroke-width="2" stroke-dasharray="5,5" />
+  
+  <line x1="760" y1="270" x2="380" y2="270" stroke="#34a853" stroke-width="2" stroke-dasharray="5,5" />
+  <line x1="760" y1="270" x2="580" y2="270" stroke="#34a853" stroke-width="2" stroke-dasharray="5,5" />
+  <line x1="760" y1="270" x2="780" y2="270" stroke="#34a853" stroke-width="2" stroke-dasharray="5,5" />
+  
+  <line x1="760" y1="270" x2="760" y2="380" stroke="#34a853" stroke-width="2" stroke-dasharray="5,5" />
+  <line x1="760" y1="380" x2="560" y2="380" stroke="#34a853" stroke-width="2" stroke-dasharray="5,5" />
+  
+  <!-- Kafka to Kafka UI -->
+  <line x1="150" y1="530" x2="150" y2="550" stroke="#666" stroke-width="1" />
+  
+  <!-- Arrow markers for some connections -->
+  <!-- Notification service to Kafka (consumer) -->
+  <circle cx="780" cy="420" r="5" fill="#ea4335" />
+  
+  <!-- Legend -->
+  <rect x="800" y="610" width="20" height="10" fill="#4285f4" />
+  <text x="825" y="620" font-family="Arial" font-size="12" fill="black" text-anchor="start">Core Services</text>
+  
+  <rect x="800" y="630" width="20" height="10" fill="#34a853" />
+  <text x="825" y="640" font-family="Arial" font-size="12" fill="black" text-anchor="start">Infrastructure Services</text>
+  
+  <rect x="800" y="650" width="20" height="10" fill="#ea4335" />
+  <text x="825" y="660" font-family="Arial" font-size="12" fill="black" text-anchor="start">Messaging</text>
+  
+  <rect x="800" y="670" width="20" height="10" fill="#fbbc05" />
+  <text x="825" y="680" font-family="Arial" font-size="12" fill="black" text-anchor="start">Storage/Databases</text>
+  
+  <line x1="800" y1="585" x2="820" y2="585" stroke="#666" stroke-width="1" />
+  <text x="825" y="590" font-family="Arial" font-size="12" fill="black" text-anchor="start">HTTP/REST</text>
+  
+  <line x1="800" y1="605" x2="820" y2="605" stroke="#666" stroke-width="2" stroke-dasharray="5,5" />
+  <text x="825" y="610" font-family="Arial" font-size="12" fill="black" text-anchor="start">Service Discovery/Config</text>
+</svg>
